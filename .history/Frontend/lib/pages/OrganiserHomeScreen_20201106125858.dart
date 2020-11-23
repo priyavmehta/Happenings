@@ -76,11 +76,9 @@ class _OrganiserHomeScreenState extends State<OrganiserHomeScreen> {
     var categories_data = widget.barGraph["data"];
     setState(() {
       for (int i = 0; i < categories_labels.length; i++) {
-        
-        String categ = categories_labels[i];
-        if (categories_labels.length >= 4 && categ.length > 8)
-          categ = categ.substring(0, 8);
-        Category cat = Category(categ, categories_data[i]);
+        String categ = categories_labels[i]
+        categ = categ.substring(0, 8);
+        Category cat = Category(categories_labels[i], categories_data[i]);
         data.add(cat);
       }
 

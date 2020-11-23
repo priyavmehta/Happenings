@@ -78,7 +78,7 @@ class _OrganiserHomeScreenState extends State<OrganiserHomeScreen> {
       for (int i = 0; i < categories_labels.length; i++) {
         
         String categ = categories_labels[i];
-        if (categories_labels.length >= 4 && categ.length > 8)
+        if (categories_labels.length >= 4)
           categ = categ.substring(0, 8);
         Category cat = Category(categ, categories_data[i]);
         data.add(cat);
